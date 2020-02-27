@@ -7,7 +7,7 @@ attr_accessor:name, :years_of_experience
     @@all << self
   end
   
-  def new_meal
+  def new_meal()
     
   end
   
