@@ -7,6 +7,10 @@ attr_accessor:name, :years_of_experience
     @@all << self
   end
   
+  def meals
+    Meal.all.select {|meal| meal.waiter == self}
+  end
+  
   def self.all
     @@all
   end
